@@ -101,6 +101,14 @@ dd { margin: 0; color: var(--muted); font-size: 14px; }
 .footer-top nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 12px; color: var(--muted); }
 .footer-bottom { border-top: 1px solid var(--line); padding-block: 21px; display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 10px; }
 .footer-bottom p { margin: 0; } .footer-bottom a { flex-shrink: 0; }
+/* Küçük metin bağlantılarının dokunma alanını yatay boşluk eklemeden büyüt. */
+.hero-bottom > a, .text-link, .footer-top nav a, .footer-bottom > a {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding-block: 8px;
+}
 @media (min-width: 761px) { .menu-toggle { display: none; } }
 @media (max-width: 1000px) {
   .container { width: calc(100% - 48px); } .navigation { gap: 20px; }
